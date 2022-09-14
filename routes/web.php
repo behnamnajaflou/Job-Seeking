@@ -18,6 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('/hi', function () {
-    return 'hi behnam';
+    return 'hi Marjan';
 });
 
