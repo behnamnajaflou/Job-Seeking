@@ -20,9 +20,7 @@ Route::get('/', function () {
 Route::get('/hi', function () {
     return 'hi Marjan
     
-| Here () is where you can register web routes for your application. These 33
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now creat
+I wanna push you
     ';
 });
 
