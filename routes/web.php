@@ -20,7 +20,7 @@ Route::get('/', function () {
 Route::get('/hi', function () {
     return 'hi Marjan
     
-I wanna push you
+I wanna push you again
     ';
 });
 
