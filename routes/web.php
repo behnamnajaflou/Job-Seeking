@@ -17,10 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hi', function () {
-    return 'hi Marjan
-    
-I wanna push you again but now to pull it
-    ';
-});
 
