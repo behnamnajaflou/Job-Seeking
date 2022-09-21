@@ -17,6 +17,14 @@ use App\Http\Controllers\ListingController;
 //all
 Route::get('/', [ListingController::class, 'index']);
 
+//create
+route::get('/listings/create', [ListingController::class, 'create']);
+
+//store
+route::post('/listings', [ListingController::class, 'store']);
+
+
+
+
 //single
 route::get('/listings/{listing}', [ListingController::class, 'show']);
-
