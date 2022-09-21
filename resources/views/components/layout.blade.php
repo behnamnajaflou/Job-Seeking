@@ -47,6 +47,7 @@
         </nav>
     <main>
         {{ $slot }}
+        <x-flash-msg />
     </main>    
     
     <footer
