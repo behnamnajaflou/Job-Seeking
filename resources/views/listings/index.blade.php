@@ -1,5 +1,4 @@
-@extends('layout')
-@section('content')
+<x-layout>
 @include('partials._hero')
 @include('partials._search')
 
@@ -12,5 +11,5 @@
     <p>There is no any post</p>
 @endunless
 </div>
-@endsection
+</x-layout>
 
