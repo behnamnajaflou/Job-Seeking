@@ -14,7 +14,7 @@ use App\Http\Controllers\ListingController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//all
+//all listing
 Route::get('/', [ListingController::class, 'index']);
 
 //create
@@ -23,8 +23,15 @@ route::get('/listings/create', [ListingController::class, 'create']);
 //store
 route::post('/listings', [ListingController::class, 'store']);
 
+//edit form
+route::get('/listings/{listing}/edit', [ListingController::class, 'edit']);
+
+//update listing
+route::put('/listings/{listing}', [ListingController::class, 'update']);
+
+//delete listing
+route::delete('/listings/{listing}', [ListingController::class, 'destroy']);
 
 
-
-//single
+//single listing
 route::get('/listings/{listing}', [ListingController::class, 'show']);
