@@ -80,4 +80,6 @@ class ListingController extends Controller
         $listing->delete();
         return redirect('/')->with('msg', 'The post Deleted successfully');
     }
+
+    
 }
