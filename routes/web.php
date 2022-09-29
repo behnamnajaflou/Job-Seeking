@@ -47,5 +47,14 @@ route::get('/register', [UserController::class, 'create']);
 //create user
 route::post('/users', [UserController::class, 'store']);
 
+//user logout
+route::post('/logout', [UserController::class, 'logout']);
+
+//user login
+route::get('/login', [UserController::class, 'login']); 
+
+//user authenticate
+route::post('/user/authenticate', [UserController::class, 'authenticate']);
+
 //test
 Route::get('/behnam', [TestController::class, 'behnam']);
